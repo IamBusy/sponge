@@ -16,7 +16,7 @@ class Driver(object):
     def get(self, key):
         raise NotImplemented
 
-    def put(self, key, value, secs):
+    def put(self, key, value, secs=0):
         raise NotImplemented
 
     def increase(self, key, value=1):
