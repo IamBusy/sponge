@@ -10,4 +10,5 @@
 @time: 22/05/2018 15:59
 """
 from .manager import CacheManager
-__all__ = [CacheManager]
+from .drivers.driver import Driver
+__all__ = [CacheManager, Driver]

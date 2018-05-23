@@ -51,3 +51,6 @@ class MemoryDriver(Driver):
             'ttl': 0
         }
 
+    def flush(self):
+        self._store = []
+
