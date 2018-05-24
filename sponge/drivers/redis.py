@@ -25,7 +25,6 @@ class RedisDriver(Driver):
     def _serialize(value):
         return json.dumps(value)
 
-
     @staticmethod
     def _unserialize(value):
         return json.loads(value)

@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/IamBusy/sponge.svg?branch=master)](https://travis-ci.org/IamBusy/sponge)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sponge.svg)](https://pypi.org/project/sponge/#description)
+[![PyPI - License](https://img.shields.io/pypi/l/sponge.svg)](https://pypi.org/project/sponge/#description)
+
+
 # sponge
 An elegent  cache library for python
 
