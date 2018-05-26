@@ -4,7 +4,7 @@
 
 
 # sponge
-An elegent  cache library for python
+An elegant  cache library for python
 
 # How to use
 
@@ -16,7 +16,6 @@ pip install sponge
 ### Usage
 
 ```python
-import time
 from sponge import CacheManager
 
 # config cache manager
@@ -54,4 +53,11 @@ cache.decrease('mykey', 2)  # the value will be -1
 cache.flush()
 
 ```
+
+# TODO
+ - [ ] Support cache events
+ - [ ] Support file driver
+ - [ ] Support database driver
+ - [ ] Added into [awesome-python](https://github.com/vinta/awesome-python)
+
 
