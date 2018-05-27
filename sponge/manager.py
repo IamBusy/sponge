@@ -18,11 +18,17 @@ class CacheManager(object):
     def __init__(self, cfg):
         self._cfg = cfg
         self._stores = {}
-        if 'default' in cfg:
+        if 'default' not in cfg:
+            keys = self._cfg.keys()
+            if len(keys) > 0:
+                self._cfg['default'] = keys[0]
+            else:
+                raise Exception('None config is not allowed for CacheManager')
+        else:
             self._resolve(cfg['default'])
             self._stores['default'] = self._stores[cfg['default']]
 
-    def store(self, name):
+    def store(self, name='default'):
         '''
         :param name:
         :return: sponge.Driver
