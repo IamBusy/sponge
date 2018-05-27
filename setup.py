@@ -20,7 +20,7 @@ setup(
     description=(
         'An elegant cache library for python'
     ),
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     author='William Wei',
     author_email='1342247033@qq.com',
     maintainer='William Wei',
