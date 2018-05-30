@@ -7,13 +7,13 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
-  - pip install --user codecov
+  - pip install codecov
 # command to run tests
 script:
   - python -m unittest discover
 
 after_success:
-  - codecov
+  - codecov --token=274c5a8c-66de-4909-8750-a98a8f462610
 
 services:
   - redis-server
