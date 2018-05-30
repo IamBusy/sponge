@@ -13,7 +13,7 @@ script:
   - python -m unittest discover
 
 after_success:
-  - codecov --token=274c5a8c-66de-4909-8750-a98a8f462610
+  - codecov
 
 services:
   - redis-server
