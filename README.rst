@@ -1,6 +1,7 @@
 `Build Status <https://travis-ci.org/IamBusy/sponge>`__ `PyPI - Python
 Version <https://pypi.org/project/sponge/#description>`__ `PyPI -
-License <https://pypi.org/project/sponge/#description>`__
+License <https://pypi.org/project/sponge/#description>`__ `Codecov
+branch <https://codecov.io/gh/IamBusy/sponge>`__
 
 sponge
 ======
