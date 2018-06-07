@@ -19,7 +19,7 @@ class CacheManager(object):
         self._cfg = cfg
         self._stores = {}
         if 'default' not in cfg:
-            keys = self._cfg.keys()
+            keys = list(self._cfg.keys())
             if len(keys) > 0:
                 self._cfg['default'] = keys[0]
             else:
