@@ -27,7 +27,10 @@ manager = CacheManager({
         'port': 3306,
         'db': 0
     },
-    'memory': {}
+    'memory': {},
+    'sqlite': {
+        'db': 'cache.db'
+    }
 })
 
 # get cache instance
