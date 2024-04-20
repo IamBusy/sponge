@@ -13,4 +13,4 @@ from .manager import CacheManager
 from .drivers.driver import Driver
 __all__ = [CacheManager, Driver]
 __author__ = 'william wei'
-__version__ = '0.0.6'
+__version__ = '0.0.7'
