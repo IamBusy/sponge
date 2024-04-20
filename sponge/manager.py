@@ -13,7 +13,7 @@ import importlib
 
 
 class CacheManager(object):
-    _supported_stores = ('redis', 'memory')
+    _supported_stores = ('redis', 'memory', 'sqlite')
 
     def __init__(self, cfg):
         self._cfg = cfg

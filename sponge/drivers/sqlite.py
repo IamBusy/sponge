@@ -3,7 +3,7 @@
 import time
 from sponge.drivers.driver import Driver
 
-class SQLiteDriver(Driver):
+class SqliteDriver(Driver):
 	def __init__(self, cfg=None):
 		import sqlite3
 		self._conn = sqlite3.connect(cfg['db'])
