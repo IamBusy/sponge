@@ -10,6 +10,7 @@
 @time: 22/05/2018 16:03
 """
 import importlib
+from sponge.drivers.driver import Driver
 
 
 class CacheManager(object):
@@ -28,7 +29,7 @@ class CacheManager(object):
             self._resolve(cfg['default'])
             self._stores['default'] = self._stores[cfg['default']]
 
-    def store(self, name='default'):
+    def store(self, name='default') -> Driver:
         '''
         :param name:
         :return: sponge.Driver
@@ -41,7 +42,7 @@ class CacheManager(object):
         else:
             raise Exception('Not supported driver [%s]' % name)
 
-    def _resolve(self, name):
+    def _resolve(self, name) -> Driver:
         '''
         :param name:
         :param cfg:
